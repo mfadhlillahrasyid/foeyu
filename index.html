@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foeyu Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Meta Pixel Code -->
+    <?php include 'var.php'; ?>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "3457496294517981");
+      fbq("track", "PageView");
+      fbq("track", "ViewContent");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=3457496294517981&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <script>
+      function whatsapp() {
+        fbq("track", "Purchase", { value: 99000, currency: "IDR" });
+      }
+    </script>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/img/1.webp" />
+      <img src="assets/img/2.webp" />
+      <img src="assets/img/3.webp" />
+      <img src="assets/img/4.webp" />
+      <img src="assets/img/5.webp" />
+      <img src="assets/img/6.webp" />
+      <img src="assets/img/7.webp" />
+      <div class="discount">
+        <div class="box">
+          <div class="icon-wrapper">
+            <img src="assets/img/add-cart-white.png" />
+          </div>
+          <p>
+            Discount berakhir dalam
+            <span class="date-wrapper"><span id="waktu"></span> hari</span>
+          </p>
+        </div>
+      </div>
+      <img src="assets/img/8.webp" />
+      <img src="assets/img/9.webp" class="last" />
+      <div class="buy-fixed">
+        <a onClick="whatsapp()" href="#" target="_blank">
+          <div class="btn-buy">
+            <img src="assets/img/add-cart-green.png" />
+            <p class="halo">Konsultasi via Whatsapp</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>

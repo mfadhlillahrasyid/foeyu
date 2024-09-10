@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.container img {
+  width: 100%;
+}
+.container a {
+  display: flex;
+}
+.container .discount {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+.container .discount .box {
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #8c9f68;
+  border-radius: 6px;
+}
+.container .discount .box .icon-wrapper {
+  background: #748455;
+  border-radius: 6px;
+  padding: 6px 18px 6px 14px;
+}
+.container .discount .box p {
+  padding: 8px 14px;
+}
+.container .discount .box .icon-wrapper img,
+.container .buy-fixed .btn-buy img {
+  width: 34px;
+}
+.container .discount .box p {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  color: #fff;
+}
+.container .discount .box p span.date-wrapper {
+  position: absolute;
+  font-weight: 800;
+  font-style: italic;
+  animation: shake 1.2s infinite;
+  margin-left: 6px;
+}
+@keyframes shake {
+  0%,
+  40%,
+  100% {
+    transform: translate(1px, -1px);
+  }
+  20% {
+    transform: translate(1px, 1px);
+  }
+  60% {
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+}
+.container img.last {
+  margin-bottom: 70px;
+}
+.container .buy-fixed {
+  width: 100%;
+  max-width: 600px;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #748455;
+}
+.container .buy-fixed a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.container .buy-fixed .btn-buy {
+  width: calc(100% - 24px);
+  max-width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 8px 14px;
+}
+.container .buy-fixed .btn-buy p {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #748455;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,
+  70% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 627px) {
+  .container .discount .box p {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .discount .box p {
+    font-size: 18px;
+  }
+  .container .buy-fixed .btn-buy {
+    padding: 12px 14px;
+  }
+  .container .buy-fixed .btn-buy img {
+    width: 26px;
+  }
+  .container .buy-fixed .btn-buy p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container .discount .box,
+  .container .discount .box .icon-wrapper {
+    border-radius: 4px;
+  }
+  .container .discount .box .icon-wrapper {
+    padding: 6px 14px 6px 10px;
+  }
+  .container .discount .box p {
+    padding: 6px 10px;
+  }
+  .container .discount .box .icon-wrapper img,
+  .container .buy-fixed .btn-buy img {
+    width: 22px;
+  }
+  .container .discount .box p,
+  .container .buy-fixed .btn-buy p {
+    font-size: 17px;
+  }
+  .container img.last {
+    margin-bottom: 60px;
+  }
+  .container .buy-fixed {
+    height: 60px;
+  }
+  .container .buy-fixed .btn-buy {
+    height: 40px;
+    gap: 10px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container .discount .box .icon-wrapper {
+    padding: 4px 10px 4px 8px;
+  }
+  .container .discount .box p {
+    padding: 4px 8px;
+  }
+  .container .discount .box .icon-wrapper img {
+    width: 18px;
+  }
+  .container .discount .box p,
+  .container .buy-fixed .btn-buy p {
+    font-size: 15px;
+  }
+  .container .buy-fixed .btn-buy {
+    gap: 6px;
+    padding: 8px 10px;
+  }
+  .container .buy-fixed .btn-buy img {
+    width: 22px;
+  }
+}
+
+@media (max-width: 340px) {
+  .container .discount .box .icon-wrapper img {
+    width: 16px;
+  }
+  .container .buy-fixed .btn-buy {
+    height: 36px;
+  }
+  .container .buy-fixed .btn-buy img {
+    width: 19px;
+  }
+  .container .discount .box p,
+  .container .buy-fixed .btn-buy p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 312px) {
+  .container .buy-fixed .btn-buy img {
+    width: 18px;
+  }
+  .container .discount .box p,
+  .container .buy-fixed .btn-buy p {
+    font-size: 12px;
+  }
+}
